@@ -1,0 +1,20 @@
+student@ALEM-F3-R01-06:~/bitmap$ go run main.go header dots.bmp
+BMP Header Information:
+File Size: 219634 bytes
+Data Offset: 1078 bytes
+DIB Header Information:
+Image Width: 467 pixels
+Image Height: 467 pixels
+Bits Per Pixel: 8
+student@ALEM-F3-R01-06:~/bitmap$ go run main.go apply --filter=blur dots.bmp 
+Usage: <input file> <output file>
+student@ALEM-F3-R01-06:~/bitmap$ go run main.go apply --filter=blur dots.bmp dot.bmp
+2024/09/26 13:45:57 Error reading BMP dots.bmp: failed to read pixel data: EOF
+exit status 1
+student@ALEM-F3-R01-06:~/bitmap$ go run main.go apply --filter=blur dots.bmp dot.bmp
+2024/09/26 13:46:42 Error reading BMP dots.bmp: failed to read pixel data: EOF
+exit status 1
+student@ALEM-F3-R01-06:~/bitmap$ go run main.go apply --filter=blur dots.bmp 
+
+
+

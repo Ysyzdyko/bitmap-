@@ -1,0 +1,10 @@
+package main
+
+func main() {
+	panic("Ooops")
+}
+
+func foo() {
+	foo := 
+"bar"
+}
